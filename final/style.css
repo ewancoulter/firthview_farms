@@ -1,0 +1,168 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Basic Layout */
+body {
+    font-family: 'Georgia', serif; /* Rustic font for farm feel */
+    line-height: 1.6;
+    background-color: #f7f1e1; /* Soft, light background */
+    color: #3b3a36; /* Dark brown text color */
+    padding: 20px;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    background-color: #8e6e3f; /* Earthy brown color */
+    color: white;
+    padding: 30px 0;
+    border-radius: 8px;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-family: 'Georgia', serif;
+    letter-spacing: 2px;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #4b2e0a; /* Darker brown for contrast */
+    padding: 12px 0;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    margin: 0 15px;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background-color: #6f4f2a; /* Rustic brown color */
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #9b7d55; /* Lighter brown on hover */
+}
+
+/* Main Content Layout */
+.main-content {
+    margin-top: 30px;
+    overflow: hidden; /* Clears the floated elements */
+}
+
+/* Columns */
+.column {
+    float: left; /* Makes the columns float next to each other */
+    width: 48%; /* Takes up 48% of the container width to leave space in between */
+    background-color: white;
+    padding: 25px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    margin-bottom: 25px;
+    border: 2px solid #c3a073; /* Border color to match farm theme */
+    background-image: url('https://www.transparenttextures.com/patterns/wood-pattern.png'); /* Subtle wood texture */
+    background-size: cover;
+    margin-right: 4%; /* Adds space between the two columns */
+}
+
+/* Remove margin-right for the last column */
+.column:last-child {
+    margin-right: 0;
+}
+
+.column img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+/* Main Section Styling */
+main {
+    background-color: white;
+    padding: 25px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    margin-top: 20px;
+    background-image: url('https://www.transparenttextures.com/patterns/wood-pattern.png'); /* Subtle wood texture */
+    background-size: cover;
+}
+
+h1, h2 {
+    color: #4e2a2a; /* Deep red-brown for headings */
+    font-family: 'Georgia', serif;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #af7228; /* Dark brown background for contrast */
+    color: white; /* White text for readability */
+    padding: 20px 0; /* More padding for a larger footer */
+    margin-top: 40px;
+    border-radius: 8px; /* Rounded corners for a softer look */
+    font-size: 1.2rem; /* Larger font size for better readability */
+}
+
+footer h1 {
+    margin: 0; /* Remove default margin */
+    font-family: 'Arial', sans-serif; /* Simple, clean font */
+    font-weight: bold; /* Make the text bold to stand out more */
+}
+
+/* Bottom Section */
+.bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #eee6d5; /* Soft light brown background */
+    border-radius: 8px;
+}
+
+/* Typography */
+p {
+    font-size: 1.1rem;
+    color: #3b3a36; /* Earthy brown text */
+    line-height: 1.8;
+    font-family: 'Georgia', serif;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .column {
+        width: 100%; /* Stacks the columns on smaller screens */
+        margin-right: 0;
+    }
+}
+
+/* Farm-Inspired Button */
+button {
+    background-color: #8e6e3f; /* Earthy brown color */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #9b7d55; /* Lighter brown on hover */
+}
